@@ -1,0 +1,238 @@
+/*----------------------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+html {
+	  height: 100%;
+	 }
+body {
+	  height: 100%;
+	  font: 14px/18px 'Times New Roman', Times, sans-serif;
+	  background-color: #FFF;
+      }
+ol, ul {
+	    list-style: none;
+        }
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+a, a:hover {
+	text-decoration: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+				 content: " ";
+				 display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.left {
+	float: left;
+}
+.right{
+	float: right;
+}
+/*----------------------------------------------------------*/
+.container{
+	width: 940px;
+	margin: 0 auto;
+}
+nav{
+	position: absolute;
+	width: 100%;
+	margin-top: 20px;
+}
+.logo{
+	float: left;
+}
+.navbar{
+	float: right;
+	padding-top: 5px;
+	list-style: none;
+}
+.navbar > li{
+	float: left;
+	margin-left: 40px;
+}
+.navbar > li > a{
+	color: white;
+	font: 14px Arial, sans-serif;
+	text-transform: uppercase;
+}
+.navbar > li > a:hover{
+	color: #fed136;
+	transition: 1s;
+}
+header{
+	height: 720px;
+	padding-top: 280px;
+	text-align: center;
+	color: white;
+	background: #222 url('../img/home.png') no-repeat center bottom;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+		 -o-background-size: cover;
+			background-size: cover;
+}
+header h3{
+	margin-bottom: 40px;
+	font: 40px/40px Arial, sans-serif;
+}
+header h1{
+	margin-bottom: 60px;
+	font: 80px/80px Arial, sans-serif;
+	text-transform: uppercase;
+}
+.btn{
+	height: 65px;
+	width: 240px;
+	border-radius: 3px;
+	border: 0;
+	background-color: #fed136;
+	cursor: pointer;
+}
+.btn > a{
+	color: white;
+	font-size: 24px;
+	text-transform: uppercase;
+}
+.btn > a:hover{
+	color: #fed136;
+	transition: 1s;
+}
+.btn:hover{
+	background-color: rgba(255, 255, 255, 0);
+	border: 1px solid #fed136;
+	transition: 1s;
+}
+/*----------------------------------------------------------*/
+#services{
+	text-align: center;
+}
+.box{
+	padding: 120px 0;
+}
+h1.title{
+	font: bold 40px/40px Arial, sans-serif;
+	text-transform: uppercase;
+	color: #222;
+	margin-bottom: 20px;
+}
+p.description{
+	font: 16px/16px Arial, sans-serif;
+	color: #777;
+}
+.services-wrap{
+	margin-top: 80px;
+}
+h5.title{
+	font: bold 18px/18px Arial, sans-serif;
+	color: #222;
+	margin-bottom: 20px;
+}
+.services-item{
+	float: left;
+	width: 33.33%;
+	padding: 100px 10px;
+}
+.basket{
+	background: url('../img/ico-basket.png') no-repeat center top;
+}
+.laptop{
+	background: url('../img/ico-laptop.png') no-repeat center top;
+}
+.lock{
+	background: url('../img/ico-lock.png') no-repeat center top;
+}
+
+#portfolio{
+	text-align: center;
+	background-color: #f7f7f7;
+}
+.portfolio-item{
+	margin-top: 80px;
+	height: 395px;
+	width: 290px;
+	background: white;
+	float: left;
+	margin-bottom: 10px;
+	margin-right: 10px;
+}
+
+#contact{
+	background: url('../img/map.png') no-repeat right bottom;
+	text-align: center;
+	background-color: #222;
+	height: 677px;
+}
+.left,
+.right{ width: 48%; margin-top: 80px; }
+input[type="text"],
+textarea{
+	width: 100%;
+	background: color;
+	border-radius: 4px;
+	box-shadow: none;
+	margin-bottom: 30px;
+	padding: 15px 20px;
+	font: bold 14px/14px Arial, sans-serif;
+	color: #222;
+}
+input[type="text"]{
+	height: 50px;
+	border: 1px solid #ccc;
+}
+textarea{
+	border: none;
+	height: 210px;
+}
+::-webkit-input-placeholder{
+	color: #bbbbbb;
+	font: bold 14px/14px Arial, sans-serif;
+	text-transform: uppercase;
+}
+::-moz-placeholder{
+	color: #bbbbbb;
+	font: bold 14px/14px Arial, sans-serif;
+	text-transform: uppercase;
+}
+
+.box-footer{
+	padding: 45px 0;
+}
+
+/*----------------------------------------------------------*/
+@media screen and (max-width: 970px){
+	.container{
+		width: 620px;
+		margin: 0 auto;
+	}
+}
